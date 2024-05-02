@@ -39,7 +39,6 @@ ul.infoGraphic li .numberWrap {
   position: absolute;
 }
 ul.infoGraphic li .number {
-  font-family: "maven pro", sans-serif;
   font-size: 8em;
   font-weight: 900;
   width: 0.9em;
@@ -128,7 +127,7 @@ ul.infoGraphic li .content p {
   color: #444;
   display: grid;
   /* place-items: center; */
-  padding: 8rem 4rem 2em;
+  padding: 5rem 4rem 2em;
 }
 
 .controls {
@@ -253,3 +252,97 @@ input[type=range]:focus::-ms-fill-upper {
     justify-content: space-between;
     align-items: center;
 }
+
+
+/*steps*/
+
+
+.steps-section{
+  /* display: flex; */
+  font-weight: 700;
+  padding:2rem 0 6rem;
+}
+
+.box-row {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+}
+
+.box-button {
+  display: flex;
+  align-items: center;
+}
+
+.box-label {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.box-icon {
+  width: 71px;
+  height: 71px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .box-icon {
+  width: 16px;
+  height: 16px;
+  }
+  
+  .box-icon img {
+    width: 16px;
+  height: 16px;
+  }
+  
+  .steps-section{
+    font-size: 0.8em;
+  }
+}
+
+.box-tag {
+  flex-grow: 1;
+  min-width: 20px;
+  height: 4px;
+  background-color: black;
+}
+
+.box:first-child .box-tag-left {
+  background-color: white;
+}
+
+.box:last-child .box-tag-right {
+  background-color: white;
+}
+
+/*how solar system works*/
+.how-system-works-sec{
+  padding-bottom:5rem;
+}
+.ul-sysytems li{
+  border-radius: 40px 5px;
+  border:1px solid green;
+  padding:10px 15px;
+  margin-bottom:0.5rem;
+  background-color: #00800017;
+}
+.ul-sysytems {
+  padding:0px 20px;
+}
+
+
