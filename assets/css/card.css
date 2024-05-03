@@ -266,9 +266,10 @@ input[type=range]:focus::-ms-fill-upper {
 .box-row {
   display: flex;
   justify-content: space-between;
-  width: 80vw;
   margin: auto;
 }
+
+
 
 .box-button {
   display: flex;
@@ -294,32 +295,56 @@ input[type=range]:focus::-ms-fill-upper {
   border: 4px solid black;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 499px) {
   .box {
     width: 16px;
     height: 16px;
   }
   
   .box-icon {
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
   }
   
   .box-icon img {
-    width: 16px;
-  height: 16px;
+    width: 30px;
+  height: 25px;
+  }
+  .box-label {
+    font-size:10px;
+    line-height:1;
   }
   
   .steps-section{
     font-size: 0.8em;
   }
-}
+  ul.infoGraphic li .coverWrap{
+    left: -8em;
+    top: -4em;
+  }
+  ul.infoGraphic li .number {
+    font-size: 5em;
+  }
+  ul.infoGraphic li .content {
+    margin: 4em 0em 0em 2em;
+  }
 
+}
+@media(max-width:499px){
+  .box-tag {
+    flex-grow: 1;
+    min-width: 5px;
+    height: 3px;
+    background-color: black;
+  }
+}
+@media(min-width:500px){
 .box-tag {
   flex-grow: 1;
   min-width: 20px;
   height: 4px;
   background-color: black;
+}
 }
 
 .box:first-child .box-tag-left {
@@ -397,6 +422,14 @@ input[type=range]:focus::-ms-fill-upper {
   -moz-border-radius: 15px 15px 0 0;
   -ms-border-radius: 15px 15px 0 0;
   -o-border-radius: 15px 15px 0 0;
+}
+@media(max-width:499px){
+  .main .prod div:not(.features) {
+    height: 167px;
+  }
+  .prod label {
+    font-size: 15px;
+  }
 }
 .main .prod div:not(.features) label {
   margin-top: 15px;
@@ -486,21 +519,34 @@ input[type=range]:focus::-ms-fill-upper {
 .main .prod .features a:hover::after {
   width: 100%;
 }
-@media (max-width: 1099px) {
+@media (max-width: 499px) {
   .main {
     margin: 10px auto;
     flex-direction: column;
     justify-content: center !important;
     gap: 60px;
   }
-  .main::before {
-    left: 7.5%;
-    width: 85%;
-    height: 2px;
-  }
-  .main .prod {
-    width: 80%;
-  }
+ .main .prod{
+  width:125%
+ }
+ .comparison-image{
+  display: none;
+ }
+}
+@media(min-width:500px) and (max-width:799px){
+  .comparison-image{
+    display: none;
+   }
+   .main .prod {
+    width: 48%;
+   }
+   .prod label {
+    font-size: 14px;
+   }
+   ul.infoGraphic li {
+    height: 80vh;
+    max-width:20em;
+   }
 }
 .comparison-image img{
   width:50%;
@@ -516,27 +562,7 @@ input[type=range]:focus::-ms-fill-upper {
 .comparison-image{
   padding-top:5rem;
 }
-/* .comparison-image .img-1{
-  padding-top:3rem;
-}
-.comparison-image .img-2{
-  padding-top:4rem;
-}
-.comparison-image .img-3{
-  padding-top:5rem;
-}
-.comparison-image .img-4{
-  padding-top:4rem;
-}
-.comparison-image .img-5{
-  padding-top:4rem;
-}
-.comparison-image .img-6{
-  padding-top:4rem;
-}
-.comparison-image .img-7{
-  padding-top:4rem;
-} */
+
 .features li{
   border-bottom:1px solid gray;
 }
