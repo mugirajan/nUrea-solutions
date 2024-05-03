@@ -2625,6 +2625,7 @@ p {
 .item-flex {
 	align-items: center;
 	display: flex;
+	justify-content: space-between;
 }
 
 .item-flex li {
@@ -2817,6 +2818,7 @@ p {
 	nav.navbar.navbar-style-one.validnavs.navbar-fixed.no-background .navbar-header img {
 		position: relative;
 		top: -35px;
+		left: -52px;
 	}
 }
 
@@ -4096,7 +4098,7 @@ p {
 .shape-animated-left img:nth-child(2) {
 	position: absolute;
 	left: 50px;
-	top: 120px;
+	top: 65px;
 }
 
 .thumb-shape-bottom {
@@ -4800,8 +4802,8 @@ p {
 }
 
 .service-tab-navs .nav-link.active {
-	background: var(--dark);
-	border-color: var(--dark) !important;
+	background: #198754;
+	border-color: #198754 !important;
 	color: var(--white);
 }
 
@@ -8514,6 +8516,7 @@ form.seo-form input:-moz-placeholder {
 }
 
 .contact-form-style-one {
+	margin-top:60px;
 	box-shadow: 0px 15px 60px -10px rgb(109 117 143 / 33%);
 	padding: 60px 80px;
 	border-radius: 10px;

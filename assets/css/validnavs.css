@@ -180,8 +180,12 @@ Version: 1.0
 }
 
 .navbar-brand>img {
-	display: block;
-	max-height: 60px;
+	/* display: block;
+	max-height: 60px; */
+	max-width: 237%;
+    /* height: 100%; */
+    display: block;
+    max-height: 81px;
 }
 
 .navbar-toggle {
