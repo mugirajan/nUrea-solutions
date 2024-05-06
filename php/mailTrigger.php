@@ -25,18 +25,19 @@ class sndMail
         $mail->SMTPAuth = true;
         $mail->Username = "contact@blackitechs.com";
         $mail->Password = "Contact@bits#737";
-        $mail->setFrom("contact@blackitechs.com", "Mail from Nuera Solutions");
+        $mail->setFrom("contact@blackitechs.com", "Mail from BITS");
 
         return $mail;
     }
 
     public function contactEnquiry($data) {
+        
         $mail = $this->configureMailer();
 
         try {
             // Send email to enquirer
             $mail->addAddress($data['email']);
-            $mail->Subject = "Your enquiry is taken into consideration - " . $data['username'];
+            $mail->Subject = "Your enquiry is taken into consideration - " . $data['name'];
             $mail->Body = "<br /><br />Will get back to you shortly<br /><br />Thanks and Regards, <br />Team BITS";
 
             $mail->send();
@@ -51,7 +52,8 @@ class sndMail
             $mail->clearAddresses(); // Clear previous recipient
 
             $mail->addAddress("mugirajan95@gmail.com"); // Admin's email address
-            $mail->Subject = "New enquiry - " . $data['username'];
+            $mail->addAddress("kamalrajganesan2000@gmail.com"); // Admin's email address
+            $mail->Subject = "New enquiry - " . $data['name'];
             $mail->Body = "
                 <h3>Contact details:</h3>
                 <strong>Name:</strong> {$data['name']} <br />

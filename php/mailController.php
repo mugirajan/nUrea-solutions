@@ -4,14 +4,15 @@ require_once("./mailTrigger.php");
 
 $sm = new sndMail();
 
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["type"])) {
+if (isset($_POST["type"])) {
     
     $res = array("success" => false, "message" => "");
 
     switch ($_POST["type"]) {
         
-        case "contact":
+        case "contactForm":
             $res = $sm->contactEnquiry($_POST);
+            // echo "Damn it...!!!";
             break;
 
         default:
