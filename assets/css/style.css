@@ -5339,7 +5339,7 @@ p {
 	margin: auto auto 30px;
 }
 
-.process-style-one .thumb::after {
+/* .process-style-one .thumb::after {
 	position: absolute;
 	left: 0;
 	bottom: -100%;
@@ -5351,7 +5351,7 @@ p {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	transition: all 0.35s ease-in-out;
-}
+} */
 
 .process-style-one .thumb::before {
 	position: absolute;
