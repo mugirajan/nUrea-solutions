@@ -168,6 +168,10 @@
 .flaticon-personal:before {
     content: "\f12c";
 }
+.fa-solar-panel:before{
+    content:"\f5ba"
+}
+.fa-solar-system:before{content:"\e02f"}
 .flaticon-online-store:before {
     content: "\f12d";
 }

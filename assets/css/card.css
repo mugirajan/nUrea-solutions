@@ -608,3 +608,29 @@ input[type=range]:focus::-ms-fill-upper {
   margin:0 auto;
   padding:10px 0;
 }
+.grayscale-sec li svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media(min-width:1026px){
+  .offset-xl-1 {
+    margin-left: 12.333333% !important;
+  }
+  
+  .navbar .attr-right .attr-nav li.button a{
+    padding: 13px 10px !important;
+  }
+}
+@media(min-width:900px) and (max-width:1025px){
+  .offset-xl-1 {
+    margin-left: 8.333333% !important;
+  }
+  
+  .navbar .attr-right .attr-nav li.button a{
+    padding: 13px 10px !important;
+  }
+}
+
+
