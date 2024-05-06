@@ -55,11 +55,11 @@ class sndMail
             $mail->addAddress("kamalrajganesan2000@gmail.com"); // Admin's email address
             $mail->Subject = "New enquiry - " . $data['name'];
             $mail->Body = "
-                <h3>Contact details:</h3>
-                <strong>Name:</strong> {$data['name']} <br />
-                <strong>Email:</strong> {$data['email']} <br />
-                <strong>Phone:</strong> {$data['phone']} <br />
-                <strong>Message:</strong> {$data['comments']} <br />
+                Contact details:
+                Name: {$data['name']} 
+                Email: {$data['email']}
+                Phone: {$data['phone']}
+                Message:{$data['comments']} 
             ";
 
             $mail->send();
