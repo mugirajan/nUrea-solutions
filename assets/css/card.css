@@ -259,9 +259,26 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .box-row {
+  width:80%;
   display: flex;
   justify-content: space-between;
   margin: auto;
+}
+@media(min-width:1024px){
+  .box-row {
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
+@media(max-width:1000px){
+  .box-row {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
 }
 
 
@@ -571,3 +588,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*comparison end*/
 
+/*footer*/
+.navbar-style-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width:40%;
+  margin:0 auto;
+  padding:10px 0;
+}
