@@ -25,7 +25,7 @@ class sndMail
         $mail->SMTPAuth = true;
         $mail->Username = "contact@blackitechs.com";
         $mail->Password = "Contact@bits#737";
-        $mail->setFrom("contact@blackitechs.com", "Mail from BITS");
+        $mail->setFrom("contact@blackitechs.com", "Mail From NUera solutions");
 
         return $mail;
     }
@@ -51,8 +51,8 @@ class sndMail
         try {
             $mail->clearAddresses(); // Clear previous recipient
 
-            $mail->addAddress("mugirajan95@gmail.com"); // Admin's email address
-            $mail->addAddress("kamalrajganesan2000@gmail.com"); // Admin's email address
+            $mail->addAddress("Info@nuerasolar.com"); // Admin's email address
+            $mail->addAddress("indrateja@nuerasolar.com"); // Admin's email address
             $mail->Subject = "New enquiry - " . $data['name'];
             $mail->Body = "
                 Contact details:
