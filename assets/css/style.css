@@ -8698,7 +8698,7 @@ footer .logo img {
 
 footer .logo {
 	margin-bottom: 30px;
-	height: 60px;
+	height: 80px;
 }
 
 footer .newsletter form {
@@ -10419,7 +10419,7 @@ ul.list-regular li::after {
 	}
 
 	.project-swiper-nav .project-pagination {
-		color: var(--color-heading);
+		color: var(--white);
 	}
 
 	.project-style-one-carousel {
@@ -11421,7 +11421,7 @@ ul.list-regular li::after {
 	}
 
 	.project-swiper-nav .project-pagination {
-		color: var(--color-heading);
+		color: var(--white);
 	}
 
 	.gallery-style-two .overlay {
