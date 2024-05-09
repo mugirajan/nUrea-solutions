@@ -6,18 +6,17 @@ use PHPMailer\PHPMailer\Exception;
 
 class sndMail
 {
-    private $f;
+    
     private $valid = array("success" => false, "message" => "");
 
     public function __construct() {
         if (!session_id()) {
             session_start();
         }
-        $this->f = "file.txt";
-        file_put_contents($this->f, "file ready" . PHP_EOL, FILE_APPEND | LOCK_EX);
     }
 
     private function configureMailer() {
+        
         $mail = new PHPMailer(true); // Passing true enables exceptions
         $mail->isSMTP();
         $mail->Host = "smtp.hostinger.com";
@@ -25,8 +24,7 @@ class sndMail
         $mail->SMTPAuth = true;
         $mail->Username = "contact@blackitechs.com";
         $mail->Password = "Contact@bits#737";
-        $mail->setFrom("contact@blackitechs.com", "Mail From NUera solutions");
-
+        $mail->setFrom("info@nuerasolar.com", "Mail From NUera solutions");
         return $mail;
     }
 
@@ -49,9 +47,9 @@ class sndMail
 
         // Send email to admin
         try {
-            $mail->clearAddresses(); // Clear previous recipient
 
-            $mail->addAddress("Info@nuerasolar.com"); // Admin's email address
+            $mail->clearAddresses(); // Clear previous recipient
+            $mail->addAddress("info@nuerasolar.com"); // Admin's email address
             $mail->addAddress("indrateja@nuerasolar.com"); // Admin's email address
             $mail->Subject = "New enquiry - " . $data['name'];
             $mail->Body = "
